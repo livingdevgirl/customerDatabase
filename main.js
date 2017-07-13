@@ -5,7 +5,7 @@
 // let template = ``
 //
 // for (var i = 0; i < customers.results.length; i++) {
-//       let data = customers.results[i];
+//       let data = data;
 //       console.log(data.name)
 //
 // const template = `
@@ -29,6 +29,7 @@ for (var i = 0; i < customers.results.length; i += 1) {
 
   let containerChild = document.createElement('div');
 
+  let data = customers.results[i]
 
   var container = `
     <div class= "bodyMargins">
@@ -39,21 +40,23 @@ for (var i = 0; i < customers.results.length; i += 1) {
     background-repeat: no-repeat;
     height: 250px;
     margin: 10px;
-    background-image: url(${customers.results[i].picture.large});
+    background-image: url(${data.picture.large});
     "></div>
 
     <h2 style="text-transform: capitalize;
       font-size: 20px;
       text-decoration: underline solid green;">
-      ${customers.results[i].name.first} ${customers.results[i].name.last}</h2>
+      ${data.name.first} ${data.name.last}</h2>
 
     <h3 style="
-    font-weight: lighter;">${customers.results[i].email}</h3>
+    font-weight: lighter;">${data.email}</h3>
 
     <div style="line-height: 40%;  margin: 15% auto;">
-    <p>${customers.results[i].location.street}</p>
-    <p>${customers.results[i].location.city}, ${customers.results[i].location.state} ${customers.results[i].location.postcode} </p>
-    <p>${customers.results[i].phone}</p>
+    <p>${data.location.street}</p>
+    <p>${data.location.city}, ${data.location.state} ${data.location.postcode} </p>
+    <p>${data.phone}</p>
+    <h4 style ="
+    font-weight: bold">${data.id.name}, ${data.id.value}</h4>
     </div>
     </div>`
 

@@ -28,8 +28,7 @@ for (var i = 0; i < customers.results.length; i += 1) {
     <p>${data.location.street}</p>
     <p>${data.location.city}, ${data.location.state} ${data.location.postcode} </p>
     <p>${data.phone}</p>
-    <h4 style ="
-    font-weight: bold">${data.id.name}, ${data.id.value}</h4>
+    <h4>${data.id.name}, ${data.id.value}</h4>
     </div>
     </div>`
 

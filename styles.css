@@ -1,3 +1,12 @@
-h4{
-  display: none;
+h3{
+  font-weight: lighter;
 }
+
+ addressInfo{
+   line-height: 40%;
+   margin: 15% auto;
+ }
+h2{text-transform: capitalize;
+   font-size: 20px;
+   text-decoration: underline solid green;
+ }

@@ -16,7 +16,7 @@ h2{text-transform: capitalize;
  }
 
 h4{
-font-weight: bold"
+font-weight: bold
 }
 
 body div{
@@ -24,4 +24,16 @@ display: grid;
 grid-template-columns: 25% 25% 25% 25%;
 grid-template-rows: 33% 33% 33%;
 margin: 0 10%;
+}
+
+.pic{
+  background: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  margin: 10px;
+}
+
+body{text-align: center;
+  font-family: sans-serif;
 }

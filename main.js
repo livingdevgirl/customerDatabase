@@ -7,15 +7,15 @@ for (var i = 0; i < customers.results.length; i += 1) {
   let data = customers.results[i]
 
   var container = `
-    <div class= "bodyMargins">
-    <div class= "pic"
+    <div class="bodyMargins">
+    <div class="pic"
     style="
     background: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
     margin: 10px;
-    background-image: url(${data.picture.large});
+    background-image: url(${data.picture.thumbnail});
     "></div>
 
     <h2 style="text-transform: capitalize;
